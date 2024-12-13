@@ -13115,3 +13115,25 @@ a.full-width-icon:hover .social-text {
 		opacity: 0;
 	}
 }
+/* Permanent black background for the header */
+.main-header {
+    background-color: black !important; /* Set background to black */
+    color: white; /* Ensure text is visible */
+    transition: background-color 0.3s ease; /* Smooth transition (optional) */
+}
+
+/* Adjust header links */
+.main-header .navbar-nav a {
+    color: white !important;
+    text-transform: uppercase;
+    font-weight: bold;
+    padding: 10px 15px;
+    transition: color 0.3s ease, background-color 0.3s ease; /* Smooth hover effect */
+}
+
+.main-header .navbar-nav a:hover {
+    color: #FF5722; /* Highlight color for hover */
+    background-color: #333; /* Optional hover background */
+    border-radius: 4px; /* Optional rounded corners */
+}
+
