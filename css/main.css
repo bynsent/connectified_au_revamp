@@ -5606,7 +5606,7 @@ pre {
 }
 
 .quotation-block {
-	background-image: url('../img/big-15.jpg');
+	background-image: url('../img/who\ we\ are.png');
 }
 
 .count-block {
@@ -5654,7 +5654,7 @@ pre {
 }
 
 .quotation-block {
-	background-image: url('../img/about_footer.png');
+	background-image: url('../img/who\ we\ are.png');
 }
 
 .iot-services {
@@ -5683,6 +5683,18 @@ pre {
 
 .managedservices-services {
 	background-image: url('../img/managedservices\ services\ banner.png');
+}
+
+.who-block {
+	background-image: url('../img/who\ we\ are.png');
+}
+
+.devices {
+	background-image: url('../img/network\ banner.jpeg');
+}
+
+.wearable {
+	background-image: url('../img/watch\ mock\ outside.png');
 }
 
 /*------------------------------------------------------------------
