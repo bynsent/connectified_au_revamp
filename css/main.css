@@ -13271,3 +13271,14 @@ header.main-header {
     padding: 10px 15px;
     border-radius: 8px; /* Optional: Match the image corners */
 }
+
+.visual-text {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.visual-center {
+    width: 100%;
+}

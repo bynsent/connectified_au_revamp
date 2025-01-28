@@ -262,7 +262,106 @@
                                 </div>
                             </div>
                         </div>
-
+                        <div class="demo-wrapper">
+                            <br>
+                            <div class="text-center">
+                                <div class="bottom-space">
+                                    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#myModal">
+                                        Got a Question?
+                                    </button>
+                                </div>
+                                <p></p>
+                            </div>
+                            <!-- Modal -->
+                            <div class="modal-wrap">
+                                <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                    <div class="modal-dialog" role="document">
+                                        <div class="modal-content">
+                                            <div class="modal-header bg-gray-light">
+                                                <h5 class="modal-title content-title contact-title mb-0" id="exampleModalLabel">GET IN TOUCH WITH US</h5>
+                                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                    <i class="icon-ios-close-empty"></i>
+                                                </button>
+                                            </div>
+                                            <div class="modal-body">
+                                                <form action="https://formspree.io/f/mvgobqgk" id="businessRequirementForm" method="post">
+                                                    <fieldset class="clearfix">
+                                                        <!-- First Name -->
+                                                        <div>
+                                                            <label for="first_name">First Name *</label>
+                                                            <input type="text" name="first_name" id="first_name" class="form-control" required>
+                                                        </div>
+                                                        <!-- Last Name -->
+                                                        <div>
+                                                            <label for="last_name">Last Name *</label>
+                                                            <input type="text" name="last_name" id="last_name" class="form-control" required>
+                                                        </div>
+                                                        <!-- Phone Number -->
+                                                        <div>
+                                                            <label for="phone_number">Phone Number *</label>
+                                                            <input type="tel" name="phone_number" id="phone_number" class="form-control" pattern="^\+?[0-9\s\-]+$" placeholder="e.g. +123456789" required>
+                                                        </div>
+                                                        <!-- Email -->
+                                                        <div>
+                                                            <label for="email">Email Address *</label>
+                                                            <input type="email" name="email" id="email" class="form-control" required>
+                                                        </div>
+                                                        <!-- Dropdown: What service do you need help with? -->
+                                                        <div>
+                                                            <label for="service_type">What service do you need help with? *</label>
+                                                            <select name="service_type" id="service_type" class="form-control" required>
+                                                                <option value="" disabled selected>Select an option</option>
+                                                                <option value="Network Devices">Network Devices</option>
+                                                                <option value="Custom Wearables">Custom Wearables</option>
+                                                                <option value="Business Process Outsourcing">Business Process Outsourcing</option>
+                                                                <option value="Professional Services">Professional Services</option>
+                                                                <option value="Managed Services">Managed Services</option>
+                                                            </select>
+                                                        </div>
+                                                        <!-- Short Description -->
+                                                        <div>
+                                                            <label for="description">Tell us more about your business requirement *</label>
+                                                            <textarea name="description" id="description" class="form-control" rows="5" required></textarea>
+                                                        </div>
+                                                        <!-- Submit Button -->
+                                                        <button type="submit" class="btn" style="background-color: #007bff; color: #ffffff; border: none; cursor: pointer;">
+                                                            Submit
+                                                        </button>
+                                                    </fieldset>
+                                                    <p id="form_response_message" class="text-left"></p>
+                                                </form>
+                                                <script>
+                                                    document.getElementById("businessRequirementForm").addEventListener("submit", function (event) {
+                                                        event.preventDefault();
+                                                        const form = event.target;
+                                                        const responseMessage = document.getElementById("form_response_message");
+                                                        // Submit form using Fetch API
+                                                        fetch(form.action, {
+                                                            method: form.method,
+                                                            body: new FormData(form),
+                                                            headers: {
+                                                                Accept: "application/json",
+                                                            },
+                                                        })
+                                                            .then(response => {
+                                                                if (response.ok) {
+                                                                    responseMessage.innerText = "Thank you for your submission!";
+                                                                    form.reset();
+                                                                } else {
+                                                                    responseMessage.innerText = "Oops! There was a problem submitting your form.";
+                                                                }
+                                                            })
+                                                            .catch(() => {
+                                                                responseMessage.innerText = "Oops! There was a problem submitting your form.";
+                                                            });
+                                                    });
+                                                </script>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </section>
                     <!--
                     <section class="content-block">
