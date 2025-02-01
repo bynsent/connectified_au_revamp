@@ -13278,7 +13278,93 @@ header.main-header {
     align-items: center;
     text-align: center;
 }
+/* carousel */
+.content-block {
+    overflow: hidden;
+    padding: 20px 0;
+}
 
-.visual-center {
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+.demo-wrapper {
     width: 100%;
+}
+
+.logo-container {
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+}
+
+.carousel {
+    display: flex;
+    position: relative;
+    width: calc(200% + 40px);
+    gap: 60px;
+    animation: scroll 20s linear infinite;
+    align-items: center;
+}
+
+.slide-item {
+    flex: 0 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Specific sizes for each logo */
+.slide-item:nth-child(1) img {  /* IKA */
+    width: 80px;
+    height: auto;
+}
+
+.slide-item:nth-child(2) img {  /* Milesight */
+    width: 120px;
+    height: auto;
+}
+
+.slide-item:nth-child(3) img {  /* Cradlepoint */
+    width: 150px;
+    height: auto;
+}
+
+.slide-item:nth-child(4) img {  /* Peplink */
+    width: 130px;
+    height: auto;
+}
+
+/* Apply the same sizes to the cloned elements */
+.slide-item:nth-child(5) img { width: 80px; height: auto; }
+.slide-item:nth-child(6) img { width: 120px; height: auto; }
+.slide-item:nth-child(7) img { width: 150px; height: auto; }
+.slide-item:nth-child(8) img { width: 130px; height: auto; }
+
+@keyframes scroll {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(calc(-50% - 20px));
+    }
+}
+
+.carousel:hover {
+    animation-play-state: paused;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .carousel {
+        gap: 40px;
+    }
+}
+
+@media (max-width: 480px) {
+    .carousel {
+        gap: 30px;
+    }
 }

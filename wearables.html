@@ -175,13 +175,18 @@
                                         <div>
                                             <h3 class="text-block-title">Our Solutions</h3>
                                             <div class="accordion-container accordion-secondary">
-                                                <div id="accordion3" role="tablist" aria-multiselectable="true">
+                                                <div id="accordion3" class="panel-icon" role="tablist" aria-multiselectable="true">
                                                     <div class="card">
                                                         <div class="card-header" role="tab" id="headingTen">
                                                             <h5 class="mb-0"><a data-toggle="collapse" data-parent="#accordion3" href="#collapseTen" aria-expanded="true" aria-controls="collapseTen">WatchArmour: Empowering Safety with Smart Alerts</a></h5>
                                                         </div>
                                                         <div id="collapseTen" class="collapse show" role="tabpanel" aria-labelledby="headingTen">
                                                             <div class="card-block">
+                                                                <div class="wow fadeInRight" data-wow-duration="1s">
+                                                                    <div class="image-wrap">
+                                                                        <img src="img/product image/1.png" alt="images description">
+                                                                    </div>
+                                                                </div>
                                                                 <p>WatchArmour is a discreet wearable designed for workplace safety, combining smartwatch functionality with advanced alert features. Whether in banks, hospitals, or offices, it ensures instant communication and peace of mind during emergencies.</p>
                                                                 <span class="block-sub-heading">Key Features</span>
                                                                 <p>Escalating alerts (Green to Red)</p>
@@ -202,6 +207,11 @@
                                                         </div>
                                                         <div id="collapseEleven" class="collapse" role="tabpanel" aria-labelledby="headingEleven">
                                                             <div class="card-block">
+                                                                <div class="wow fadeInRight" data-wow-duration="1s">
+                                                                    <div class="image-wrap">
+                                                                        <img src="img/product image/2.png" alt="images description">
+                                                                    </div>
+                                                                </div>
                                                                 <p>Watch Guardian integrates wearables, centralised communication, and security systems to deliver a robust safety platform for high-risk environments like banks, hospitals, and offices.</p>
                                                                 <span class="block-sub-heading">Key Features</span>
                                                                 <p>Real-time GPS, WiFi, and LTE tracking</p>
@@ -222,6 +232,11 @@
                                                         </div>
                                                         <div id="collapseTwelve" class="collapse" role="tabpanel" aria-labelledby="headingTwelve">
                                                             <div class="card-block">
+                                                                <div class="wow fadeInRight" data-wow-duration="1s">
+                                                                    <div class="image-wrap">
+                                                                        <img src="img/product image/3.png" alt="images description">
+                                                                    </div>
+                                                                </div>
                                                                 <p>Q-View offers discreet safety for individuals and employees with wearable devices that provide emergency alerts, fall detection, and real-time monitoring.</p>
                                                                 <span class="block-sub-heading">Key Features</span>
                                                                 <p>Emergency alerts with one-button activation</p>
@@ -274,21 +289,37 @@
                                                             <label for="first_name">First Name *</label>
                                                             <input type="text" name="first_name" id="first_name" class="form-control" required>
                                                         </div>
+                                                        
                                                         <!-- Last Name -->
                                                         <div>
                                                             <label for="last_name">Last Name *</label>
                                                             <input type="text" name="last_name" id="last_name" class="form-control" required>
                                                         </div>
+
+                                                        <!-- Company -->
+                                                        <div>
+                                                            <label for="company">Company *</label>
+                                                            <input type="text" name="company" id="company" class="form-control" required>
+                                                        </div>
+
+                                                        <!-- Position -->
+                                                        <div>
+                                                        <label for="company">Position *</label>
+                                                        <input type="text" name="position" id="position" class="form-control" required>
+                                                        </div>
+                                                        
                                                         <!-- Phone Number -->
                                                         <div>
                                                             <label for="phone_number">Phone Number *</label>
                                                             <input type="tel" name="phone_number" id="phone_number" class="form-control" pattern="^\+?[0-9\s\-]+$" placeholder="e.g. +123456789" required>
                                                         </div>
+                                                        
                                                         <!-- Email -->
                                                         <div>
                                                             <label for="email">Email Address *</label>
                                                             <input type="email" name="email" id="email" class="form-control" required>
                                                         </div>
+                                                        
                                                         <!-- Dropdown: What service do you need help with? -->
                                                         <div>
                                                             <label for="service_type">What service do you need help with? *</label>
@@ -301,11 +332,13 @@
                                                                 <option value="Managed Services">Managed Services</option>
                                                             </select>
                                                         </div>
+                                                        
                                                         <!-- Short Description -->
                                                         <div>
                                                             <label for="description">Tell us more about your business requirement *</label>
                                                             <textarea name="description" id="description" class="form-control" rows="5" required></textarea>
                                                         </div>
+                                                        
                                                         <!-- Submit Button -->
                                                         <button type="submit" class="btn" style="background-color: #007bff; color: #ffffff; border: none; cursor: pointer;">
                                                             Submit
@@ -313,11 +346,13 @@
                                                     </fieldset>
                                                     <p id="form_response_message" class="text-left"></p>
                                                 </form>
+
                                                 <script>
                                                     document.getElementById("businessRequirementForm").addEventListener("submit", function (event) {
                                                         event.preventDefault();
                                                         const form = event.target;
                                                         const responseMessage = document.getElementById("form_response_message");
+                                                
                                                         // Submit form using Fetch API
                                                         fetch(form.action, {
                                                             method: form.method,
@@ -339,6 +374,7 @@
                                                             });
                                                     });
                                                 </script>
+                                                
                                             </div>
                                         </div>
                                     </div>

@@ -167,9 +167,37 @@
                                         <h3 class="text-block-title">Networking Solutions That Keep You Connected</h3>
                                         <p>Empower your business with state-of-the-art networking solutions powered by Connectified and our trusted partners—Peplink, Cradlepoint, and Milesight. Together, we deliver high-performance, secure, and scalable connectivity tailored to your unique operational needs.</p>
                                         <h3 class="text-block-title">Partnering for Excellence</h3>
+                                        <div class="wow fadeInLeft" data-wow-duration="1s">
+                                            <div class="image-wrap">
+                                                <img src="img/partner logos/4.png" alt="images description">
+                                            </div>
+                                        </div>
                                         <p>Peplink: Renowned for its robust and reliable SD-WAN technology, Peplink provides seamless multi-network connectivity, making it ideal for enterprise-grade networks and IoT applications.</p>
-                                        <p>Cradlepoint: A leader in 5G and LTE networking solutions, Cradlepoint offers advanced wireless routers and cloud-managed connectivity tools for businesses that demand speed, reliability, and scalability.</p>
+                                        <div class="wow fadeInLeft" data-wow-duration="1s">
+                                            <div class="image-wrap">
+                                                <img src="img/partner logos/3.png" alt="images description">
+                                            </div>
+                                        </div>
+                                        <p>Cradlepoint part of Ericsson: As pioneers in 5G and LTE solutions, Cradlepoint, powered by Ericsson, offers high-performance wireless routers and cloud-managed networking tools that cater to the demands of modern businesses requiring speed and scalability</p>
+                                        <div class="wow fadeInLeft" data-wow-duration="1s">
+                                            <div class="image-wrap">
+                                                <img src="img/partner logos/2.png" alt="images description">
+                                            </div>
+                                        </div>
                                         <p>Milesight: Specialising in innovative IoT and AI-driven devices, Milesight combines cutting-edge hardware with intelligent monitoring and data analysis, perfect for industries like smart cities, logistics, and healthcare.</p>
+                                        <div class="wow fadeInLeft" data-wow-duration="1s">
+                                            <div class="image-wrap">
+                                                <img src="img/partner logos/1.png" alt="images description">
+                                            </div>
+                                        </div>
+                                        <p>Teltonika: With a reputation for durable and versatile networking hardware, Teltonika provides reliable routers and IoT solutions tailored for industrial and enterprise applications.</p>
+                                        <div class="wow fadeInLeft" data-wow-duration="1s">
+                                            <div class="image-wrap">
+                                                <img src="img/partner logos/5.png" alt="images description">
+                                            </div>
+                                        </div>
+                                        <p>Samsung & Samsung Knox: Leveraging Samsung's advanced technology and the industry-leading Samsung Knox platform, Connectified ensures enterprise-grade security, reliability, and manageability across all connected devices.</p>
+
                                         <p>By leveraging these industry leaders, Connectified ensures your network infrastructure remains at the forefront of technology.</p>
                                     </div>
                                 </div>
@@ -187,6 +215,96 @@
                             </div>
                         </div>
                         
+                        <section class="content-block">
+                            <div class="container">
+                                <div class="demo-wrapper">
+                                    <div class="logo-container">
+                                        <div class="carousel">
+                                            <div class="slide-item"><img src="img/partner logos/1.png" alt="Logo 1"></div>
+                                            <div class="slide-item"><img src="img/partner logos/2.png" alt="Logo 2"></div>
+                                            <div class="slide-item"><img src="img/partner logos/3.png" alt="Logo 3"></div>
+                                            <div class="slide-item"><img src="img/partner logos/4.png" alt="Logo 4"></div>
+                                            <div class="slide-item"><img src="img/partner logos/5.png" alt="Logo 5"></div>
+                                            <div class="slide-item"><img src="img/partner logos/6.png" alt="Logo 6"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+                        
+                        <style>
+                        .content-block {
+                            overflow: hidden;
+                            padding: 20px 0;
+                        }
+                        
+                        .carousel {
+                            display: flex;
+                            position: relative;
+                            width: 100%;
+                            gap: 20px;
+                            animation: scroll 20s linear infinite;
+                        }
+                        
+                        .slide-item {
+                            flex: 0 0 auto;
+                            width: 15%;
+                            min-width: 150px;
+                        }
+                        
+                        .slide-item img {
+                            display: block;
+                            width: 100%;
+                            height: auto;
+                            border-radius: 8px;
+                        }
+                        
+                        @keyframes scroll {
+                            0% {
+                                transform: translateX(0);
+                            }
+                            100% {
+                                transform: translateX(calc(-100% - 20px));
+                            }
+                        }
+                        
+                        /* Add these styles for the seamless loop */
+                        .carousel {
+                            width: calc(200% + 40px);  /* Double width plus gaps */
+                        }
+                        
+                        .carousel::after {
+                            content: "";
+                            display: block;
+                            clear: both;
+                        }
+                        </style>
+                        
+                        <script>
+                        document.addEventListener("DOMContentLoaded", function() {
+                            const carousel = document.querySelector(".carousel");
+                            const slides = Array.from(carousel.children);
+                            
+                            // Clone all slides and append them
+                            slides.forEach(slide => {
+                                const clone = slide.cloneNode(true);
+                                carousel.appendChild(clone);
+                            });
+                        
+                            // Pause animation on hover
+                            carousel.addEventListener('mouseenter', () => {
+                                carousel.style.animationPlayState = 'paused';
+                            });
+                            
+                            carousel.addEventListener('mouseleave', () => {
+                                carousel.style.animationPlayState = 'running';
+                            });
+                        });
+                        </script>
+                        
+                        
+                                                
+
                         <div class="visual-text visual-center"><a href="#" class="btn btn-primary">Explore Our Networking Solutions<span class="c-ripple js-ripple"><span class="c-ripple__circle"></span></span></a>
                         </div>
 
@@ -224,6 +342,18 @@
                                                         <div>
                                                             <label for="last_name">Last Name *</label>
                                                             <input type="text" name="last_name" id="last_name" class="form-control" required>
+                                                        </div>
+
+                                                        <!-- Company -->
+                                                        <div>
+                                                            <label for="company">Company *</label>
+                                                            <input type="text" name="company" id="company" class="form-control" required>
+                                                        </div>
+
+                                                        <!-- Position -->
+                                                        <div>
+                                                        <label for="company">Position *</label>
+                                                        <input type="text" name="position" id="position" class="form-control" required>
                                                         </div>
                                                         
                                                         <!-- Phone Number -->

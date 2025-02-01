@@ -264,7 +264,100 @@
                                         </div>
                                     </div>
                                 </div>
+
+                            <br>
+                            <div class="row">
+                                <div class="col-lg-6 bottom-space-medium-only">
+                                    <ul class="content-list info-list">
+                                        <li class="row">
+                                            <div class="col">
+                                                <span class="custom-icon-folder"><span class="sr-only">&nbsp;</span></span>
+                                                <span class="text title">Project:</span>
+                                            </div>
+                                            <div class="col">
+                                                <p>Top Australian Telecommunications Company</p>
+                                            </div>
+                                        </li>
+                                        <li class="row">
+                                            <div class="col">
+                                                <span class="custom-icon-calendar"><span class="sr-only">&nbsp;</span></span>
+                                                <span class="text title">Started on:</span>
+                                            </div>
+                                            <div class="col">
+                                                <p>August 2022</p>
+                                            </div>
+                                        </li>
+                                        <li class="row">
+                                            <div class="col">
+                                                <span class="custom-icon-skill"><span class="sr-only">&nbsp;</span></span>
+                                                <span class="text title">Services Used:</span>
+                                            </div>
+                                            <div class="col">
+                                                <p>Remote Support, Device Management, and FOTA Services</p>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                    <div class="text-block top-space">
+                                        <h2 class="text-block-title">Client Profile:</h2>
+                                        <p>
+                                            In collaboration with a major Australian telecommunications company, Connectified provided extensive support to manage and optimise a large fleet of connected devices. Through a centralised system for device management, the full lifecycle of devices was handled with precision, from provisioning to decommissioning. A robust framework for remote support was implemented to ensure rapid issue resolution, minimising downtime and enhancing customer satisfaction. Firmware Over-The-Air (FOTA) updates were also strategically managed to keep devices secure, functional, and compliant with evolving standards, eliminating the need for manual interventions. This end-to-end support model enhanced operational efficiency and future-proofed the client’s services.
+                                        </p>
+                                     </div>
+                                </div>
+                                <div class="col-lg-6">
+                                    <div class="bg-stretch img-wrap wow slideInRight">
+                                        <img src="img/trc.jpg" alt="images">
+                                    </div>
+                                </div>
                             </div>
+
+                            <br>
+                            <div class="row">
+                                <div class="col-lg-6 bottom-space-medium-only">
+                                    <ul class="content-list info-list">
+                                        <li class="row">
+                                            <div class="col">
+                                                <span class="custom-icon-folder"><span class="sr-only">&nbsp;</span></span>
+                                                <span class="text title">Project:</span>
+                                            </div>
+                                            <div class="col">
+                                                <p>Top Australian Security Company</p>
+                                            </div>
+                                        </li>
+                                        <li class="row">
+                                            <div class="col">
+                                                <span class="custom-icon-calendar"><span class="sr-only">&nbsp;</span></span>
+                                                <span class="text title">Started on:</span>
+                                            </div>
+                                            <div class="col">
+                                                <p>August 2022</p>
+                                            </div>
+                                        </li>
+                                        <li class="row">
+                                            <div class="col">
+                                                <span class="custom-icon-skill"><span class="sr-only">&nbsp;</span></span>
+                                                <span class="text title">Services Used:</span>
+                                            </div>
+                                            <div class="col">
+                                                <p>DevOps and Software Development Support</p>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                    <div class="text-block top-space">
+                                        <h2 class="text-block-title">Client Profile:</h2>
+                                        <p>
+                                            For an Australian security company, Connectified delivered a comprehensive suite of services spanning DevOps support, quality assurance, and project management for both on-premises and cloud-based software development solutions. The integration of development and operations workflows in Azure and on-premises environments improved collaboration and deployment efficiency. Rigorous quality assurance processes ensured reliable, secure, and high-performing applications. Our project management expertise enabled end-to-end oversight, ensuring deadlines were met and project objectives achieved consistently. With continuous monitoring and optimisation, the client’s software solutions were kept secure and up-to-date, paving the way for enhanced productivity and innovation.
+                                        </p>
+                                     </div>
+                                </div>
+                                <div class="col-lg-6">
+                                    <div class="bg-stretch img-wrap wow slideInRight">
+                                        <img src="img/trc.jpg" alt="images">
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
                         </div>
                         <div class="demo-wrapper">
                             <br>
@@ -295,21 +388,37 @@
                                                             <label for="first_name">First Name *</label>
                                                             <input type="text" name="first_name" id="first_name" class="form-control" required>
                                                         </div>
+                                                        
                                                         <!-- Last Name -->
                                                         <div>
                                                             <label for="last_name">Last Name *</label>
                                                             <input type="text" name="last_name" id="last_name" class="form-control" required>
                                                         </div>
+
+                                                        <!-- Company -->
+                                                        <div>
+                                                            <label for="company">Company *</label>
+                                                            <input type="text" name="company" id="company" class="form-control" required>
+                                                        </div>
+
+                                                        <!-- Position -->
+                                                        <div>
+                                                        <label for="company">Position *</label>
+                                                        <input type="text" name="position" id="position" class="form-control" required>
+                                                        </div>
+                                                        
                                                         <!-- Phone Number -->
                                                         <div>
                                                             <label for="phone_number">Phone Number *</label>
                                                             <input type="tel" name="phone_number" id="phone_number" class="form-control" pattern="^\+?[0-9\s\-]+$" placeholder="e.g. +123456789" required>
                                                         </div>
+                                                        
                                                         <!-- Email -->
                                                         <div>
                                                             <label for="email">Email Address *</label>
                                                             <input type="email" name="email" id="email" class="form-control" required>
                                                         </div>
+                                                        
                                                         <!-- Dropdown: What service do you need help with? -->
                                                         <div>
                                                             <label for="service_type">What service do you need help with? *</label>
@@ -322,11 +431,13 @@
                                                                 <option value="Managed Services">Managed Services</option>
                                                             </select>
                                                         </div>
+                                                        
                                                         <!-- Short Description -->
                                                         <div>
                                                             <label for="description">Tell us more about your business requirement *</label>
                                                             <textarea name="description" id="description" class="form-control" rows="5" required></textarea>
                                                         </div>
+                                                        
                                                         <!-- Submit Button -->
                                                         <button type="submit" class="btn" style="background-color: #007bff; color: #ffffff; border: none; cursor: pointer;">
                                                             Submit
@@ -334,11 +445,13 @@
                                                     </fieldset>
                                                     <p id="form_response_message" class="text-left"></p>
                                                 </form>
+
                                                 <script>
                                                     document.getElementById("businessRequirementForm").addEventListener("submit", function (event) {
                                                         event.preventDefault();
                                                         const form = event.target;
                                                         const responseMessage = document.getElementById("form_response_message");
+                                                
                                                         // Submit form using Fetch API
                                                         fetch(form.action, {
                                                             method: form.method,
@@ -360,6 +473,7 @@
                                                             });
                                                     });
                                                 </script>
+                                                
                                             </div>
                                         </div>
                                     </div>
