@@ -79,7 +79,13 @@
                                         <a class="dropdown-toggle" data-toggle="dropdown" href="devices.html" data-title="Products"> Products </a>
                                         <ul class="dropdown-menu no-border-radius">
                                             <li><a href="devices.html"> Networking </a></li>
-                                            <li><a href="wearables.html"> Custom Wearables </a></li>
+                                            <li class="dropdown dropdown-right dropdown-parent">
+                                                <a class="sub-marker" href="wearables.html"> Custom Wearables <i class="icon-ios-more icn-right"></i></a>
+                                                <ul class="dropdown-menu dropdown-menu-indent-sm no-border-radius">
+                                                    <li><a href="wearables.html"> Custom Wearables </a></li>
+                                                    <li><a href="watchguardian.html"> Watch Guardian </a></li>
+                                                </ul>
+                                            </li>
                                         </ul>
                                     </li>
                                     <li class="dropdown" data-animation="fadeIn">
@@ -173,6 +179,7 @@
                                         <p><span class="block-sub-heading">Recruitment and training</span>Sourcing top talent and providing the training required to ensure seamless integration into your operations.</p>
                                         <p><span class="block-sub-heading">Ongoing management</span>Monitoring performance, refining processes, and managing teams to maintain efficiency and drive growth.</p>
                                         <p><span class="block-sub-heading">IOT management</span>Handling the complete lifecycle of your IoT ecosystem.</p>
+                                        <p><span class="block-sub-heading">Managed Network Services</span>Providing end-to-end management and optimisation of network infrastructure across multiple brands, ensuring seamless connectivity, security, and performance.</p>
                                         </div>
 
                                         <div class="col-lg-6">
@@ -268,6 +275,22 @@
                                                                 </div>
                                                             </div>
                                                         </div>
+                                                        <div class="card">
+                                                            <div class="card-header" role="tab" id="headingFifteen">
+                                                                <h5 class="mb-0"><a class="collapsed" data-toggle="collapse" data-parent="#accordion3" href="#collapseFifteen" aria-expanded="false" aria-controls="collapseTwelve">Managed Network Services</a></h5>
+                                                            </div>
+                                                            <div id="collapseFifteen" class="collapse" role="tabpanel" aria-labelledby="headingFifteen">
+                                                                <div class="card-block">
+                                                                    <p>Transform your business operations with proactive network management solutions that ensure security, reliability, and efficiency. Our services support leading networking brands.</p>
+                                                                    <span class="block-sub-heading">Key Features</span>
+                                                                    <p>Network Design & Deployment – Tailoring network architectures to meet business needs and ensure optimal performance.</p>
+                                                                    <p>Device Configuration & Management – Handling the staging, configuration, and maintenance of network devices for seamless integration.</p>
+                                                                    <p>Cloud-Based Network Monitoring – Utilising platforms like NetCloud Manager for real-time oversight and remote troubleshooting.</p>
+                                                                    <p>Security & Compliance Management – Implementing cybersecurity measures and ensuring compliance with industry standards.</p>
+                                                                    <p>24/7 Network Support & Incident Resolution – Ensuring minimal downtime with proactive troubleshooting and technical assistance.</p>
+                                                                </div>
+                                                            </div>
+                                                        </div>
                                                     </div>
                                                 </div>
                                             </div>
@@ -314,18 +337,18 @@
                                                             <input type="text" name="last_name" id="last_name" class="form-control" required>
                                                         </div>
 
+                                                        <!-- Position -->
+                                                        <div>
+                                                            <label for="company">Job Title *</label>
+                                                            <input type="text" name="position" id="position" class="form-control" required>
+                                                            </div>
+
                                                         <!-- Company -->
                                                         <div>
                                                             <label for="company">Company *</label>
                                                             <input type="text" name="company" id="company" class="form-control" required>
                                                         </div>
-
-                                                        <!-- Position -->
-                                                        <div>
-                                                        <label for="company">Position *</label>
-                                                        <input type="text" name="position" id="position" class="form-control" required>
-                                                        </div>
-                                                        
+                                                  
                                                         <!-- Phone Number -->
                                                         <div>
                                                             <label for="phone_number">Phone Number *</label>

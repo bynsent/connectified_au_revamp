@@ -79,12 +79,18 @@
                                         <a class="dropdown-toggle" data-toggle="dropdown" href="devices.html" data-title="Products"> Products </a>
                                         <ul class="dropdown-menu no-border-radius">
                                             <li><a href="devices.html"> Networking </a></li>
-                                            <li><a href="wearables.html"> Custom Wearables </a></li>
+                                            <li class="dropdown dropdown-right dropdown-parent">
+                                                <a class="sub-marker" href="wearables.html"> Custom Wearables <i class="icon-ios-more icn-right"></i></a>
+                                                <ul class="dropdown-menu dropdown-menu-indent-sm no-border-radius">
+                                                    <li><a href="wearables.html"> Custom Wearables </a></li>
+                                                    <li><a href="watchguardian.html"> Watch Guardian </a></li>
+                                                </ul>
+                                            </li>
                                         </ul>
                                     </li>
                                     <li class="dropdown" data-animation="fadeIn">
                                         <a class="dropdown-toggle" data-toggle="dropdown" href="bpo.html" data-title="BPO"> Business Process Outsourcing </a>
-                                        <ul class="dropdown-menu no-border-radius">
+                                        <ul class="dropdown-menu  no-border-radius">
                                             <li class="dropdown dropdown-right dropdown-parent">
                                                 <a href="bpo.html">Business Process Outsourcing</a>
                                             </li>
@@ -93,45 +99,51 @@
                                             </li>
                                         </ul>
                                     </li>
+
                                     <li class="dropdown" data-animation="fadeIn">
                                         <a class="dropdown-toggle" data-toggle="dropdown" href="iot_services.html" data-title="Professional Services"> Professional Services </a>
-                                        <ul class="dropdown-menu no-border-radius">
+                                        <ul class="dropdown-menu  no-border-radius">
                                             <li class="dropdown dropdown-right dropdown-parent">
                                                 <a href="iot_services.html">IOT SERVICES</a>
                                             </li>
-                                            <li class="dropdown dropdown-right dropdown-parent">
+                                                <li class="dropdown dropdown-right dropdown-parent">
                                                 <a href="iot_projects.html">Our Projects</a>
                                             </li>
                                         </ul>
                                     </li>
+                                    
                                     <li class="dropdown" data-animation="fadeIn">
                                         <a class="dropdown-toggle" data-toggle="dropdown" href="managedservices.html" data-title="Managed Services"> Managed Services </a>
-                                        <ul class="dropdown-menu no-border-radius">
+                                        <ul class="dropdown-menu  no-border-radius">
+
                                             <li class="dropdown dropdown-right dropdown-parent">
                                                 <a href="managedservices.html">Managed Services</a>
                                             </li>
+
                                             <li class="dropdown dropdown-right dropdown-parent">
                                                 <a href="supportdesk.html">Support Desk Services</a>
                                             </li>
+
                                             <li class="dropdown dropdown-right dropdown-parent">
                                                 <a href="managedservices_projects.html">Our Projects</a>
                                             </li>
                                         </ul>
                                     </li>
+                                    
                                     <li>
                                         <a href="about.html"> About </a>
                                     </li>
+
                                     <li>
                                         <a href="#"> Blogs </a>
                                     </li>
+
                                     <li>
                                         <a href="#"> Shop </a>
                                     </li>
                                     <li>
                                         <a href="contact.html"> Contact Us </a>
                                     </li>
-                                </ul>
-                            </div>
                         </nav>
                     </div>
                 </div>
@@ -296,18 +308,18 @@
                                                             <input type="text" name="last_name" id="last_name" class="form-control" required>
                                                         </div>
 
+                                                        <!-- Position -->
+                                                        <div>
+                                                            <label for="company">Job Title *</label>
+                                                            <input type="text" name="position" id="position" class="form-control" required>
+                                                            </div>
+
                                                         <!-- Company -->
                                                         <div>
                                                             <label for="company">Company *</label>
                                                             <input type="text" name="company" id="company" class="form-control" required>
                                                         </div>
-
-                                                        <!-- Position -->
-                                                        <div>
-                                                        <label for="company">Position *</label>
-                                                        <input type="text" name="position" id="position" class="form-control" required>
-                                                        </div>
-                                                        
+                                                  
                                                         <!-- Phone Number -->
                                                         <div>
                                                             <label for="phone_number">Phone Number *</label>
