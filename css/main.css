@@ -12079,7 +12079,7 @@ a.full-width-icon:hover .social-text {
 	}
 
 	.work-block {
-		min-height: 1240px;
+		min-height: auto;
 	}
 
 	.content-block-v4 {
