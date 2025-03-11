@@ -42,6 +42,66 @@ Version: 		1.0.0
 }
 
 /* preloader styles */
+.offer-carousel-container {
+    position: absolute;
+    bottom: -100px; /* Adjust as needed */
+    left: 50%;
+    transform: translateX(-50%);
+    width: 90%;
+    max-width: 1200px;
+    z-index: 100; /* Ensure it's above the banner */
+}
+
+.swiper {
+    width: 100%;
+    padding-bottom: 40px;
+}
+
+.swiper-slide {
+    display: flex;
+    justify-content: center;
+}
+
+.offer-card {
+    width: 90%;
+    max-width: 280px;
+    background: white;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    text-align: center;
+}
+
+.offer-card img {
+    width: 100%;
+    border-radius: 8px;
+}
+
+.offer-card h5 {
+    margin-top: 15px;
+    font-size: 1.2rem;
+}
+
+.offer-card p {
+    font-size: 0.9rem;
+    color: #333;
+}
+
+.offer-card a {
+    color: #14acd4;
+    font-weight: bold;
+    display: inline-block;
+    margin-top: 10px;
+}
+
+.swiper-button-prev,
+.swiper-button-next {
+    color: #14acd4;
+}
+
+.swiper-pagination-bullet {
+    background: #14acd4;
+}
 
 .preloader {
 	position: fixed;

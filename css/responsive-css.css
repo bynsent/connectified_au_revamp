@@ -1,0 +1,140 @@
+/* Responsive CSS Overrides */
+
+/* General responsive settings */
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Container adjustments for different screen sizes */
+@media (max-width: 1200px) {
+  .container {
+    max-width: 95%;
+  }
+}
+
+/* Offer Cards Responsiveness */
+@media (max-width: 992px) {
+  .offer-cards {
+    flex-wrap: wrap;
+    bottom: -200px;
+  }
+  
+  .offer-cards .card {
+    max-width: 48% !important;
+    margin-bottom: 15px;
+  }
+}
+
+@media (max-width: 768px) {
+  .offer-cards {
+    flex-direction: column;
+    bottom: -400px;
+    width: 95%;
+  }
+  
+  .offer-cards .card {
+    max-width: 100% !important;
+    margin-bottom: 15px;
+  }
+  
+  /* Adjust main content to account for taller cards section */
+  .content-wrapper {
+    margin-top: 400px;
+  }
+}
+
+/* Banner text responsiveness */
+@media (max-width: 992px) {
+  .slider-sub-title {
+    font-size: 24px !important;
+    line-height: 1.8 !important;
+  }
+}
+
+@media (max-width: 768px) {
+  .slider-sub-title {
+    font-size: 18px !important;
+    line-height: 1.5 !important;
+    padding: 0 15px !important;
+  }
+}
+
+@media (max-width: 576px) {
+  .slider-sub-title {
+    font-size: 16px !important;
+    line-height: 1.4 !important;
+    margin-top: -50px !important; 
+  }
+}
+
+/* Navigation adjustments */
+@media (max-width: 768px) {
+  .navbar-brand img {
+    max-width: 200px;
+  }
+  
+  .main-header .dropdown-menu {
+    position: static !important;
+    width: 100%;
+  }
+}
+
+/* Flipped boxes layout */
+@media (max-width: 992px) {
+  .flipped-box .col-wrap {
+    width: 50%;
+    float: left;
+  }
+}
+
+@media (max-width: 576px) {
+  .flipped-box .col-wrap {
+    width: 100%;
+    float: none;
+    margin-bottom: 20px;
+  }
+}
+
+/* Footer responsiveness */
+@media (max-width: 768px) {
+  .footer-info .col-md-4 {
+    margin-bottom: 30px;
+  }
+  
+  .footer .holder {
+    padding: 0 15px;
+  }
+}
+
+/* Block headings responsiveness */
+@media (max-width: 768px) {
+  .block-main-heading {
+    font-size: 28px;
+  }
+  
+  .block-sub-heading {
+    font-size: 16px;
+  }
+  
+  .element-heading {
+    font-size: 24px;
+    margin: 30px 0 20px;
+  }
+}
+
+/* Fix spacing issues on mobile */
+@media (max-width: 576px) {
+  .content-block {
+    padding: 40px 0;
+  }
+  
+  .waituk_newsletter-form input[type="submit"] {
+    width: 100%;
+    margin-top: 10px;
+  }
+  
+  .waituk_newsletter-form .input-holder {
+    width: 100%;
+  }
+}
