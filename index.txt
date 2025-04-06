@@ -1,0 +1,546 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <title>Connectified Australia</title>
+    <!-- Font Icons -->
+    <link media="all" rel="stylesheet" href="css/fonts/icomoon/icomoon.css">
+    <link media="all" rel="stylesheet" href="css/fonts/roxine-font-icon/roxine-font.css">
+    <link media="all" rel="stylesheet" href="vendors/font-awesome/css/font-awesome.css">
+    <!-- Vendors -->
+    <link media="all" rel="stylesheet" href="vendors/owl-carousel/dist/assets/owl.carousel.min.css">
+    <link media="all" rel="stylesheet" href="vendors/owl-carousel/dist/assets/owl.theme.default.min.css">
+    <link media="all" rel="stylesheet" href="vendors/animate/animate.css">
+    <link media="all" rel="stylesheet" href="vendors/rateyo/jquery.rateyo.css">
+    <link media="all" rel="stylesheet" href="vendors/bootstrap-datepicker/css/bootstrap-datepicker.css">
+    <link media="all" rel="stylesheet" href="vendors/fancyBox/source/jquery.fancybox.css">
+    <link media="all" rel="stylesheet" href="vendors/fancyBox/source/helpers/jquery.fancybox-thumbs.css">
+    <!-- Bootstrap 4 -->
+    <link media="all" rel="stylesheet" href="css/bootstrap.css">
+    <!-- Rev Slider -->
+    <link rel="stylesheet" type="text/css" href="vendors/rev-slider/revolution/css/settings.css">
+    <link rel="stylesheet" type="text/css" href="vendors/rev-slider/revolution/css/layers.css">
+    <link rel="stylesheet" type="text/css" href="vendors/rev-slider/revolution/css/navigation.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+    <!-- Theme CSS -->
+    <link media="all" rel="stylesheet" href="css/main.css">
+    <!-- Custom CSS -->
+    <link media="all" rel="stylesheet" href="css/construction.css">
+</head>
+
+<body>
+    <!-- main wrapper -->
+    <div id="wrapper">
+        <div class="page-wrapper">
+            <!-- header of the page -->
+            <header class="fixed-top main-header" id="waituk-main-header">
+                <div id="nav-section">
+                    <div class="mega-menus top-header">
+                        <nav class="p-static hidden-md-down">
+                            <div class="container">
+                                <div class="row">
+                                    <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 hidden-xs float-left text-center-sm no-float-sm no-padding">
+                                        <ul class="i-list i-list-i-block i-list-i-block-sm i-list-i-block-no-hover pad-0-sm margin-bottom-0 float-left text-center">
+                                            <li>
+                                                <button id="theme-toggle" style="padding: 10px; background-color: transparent; border: 1px solid #ccc; cursor: pointer;">
+                                                    Switch Mode
+                                                </button>
+                                            </li>
+                                            <li>
+                                                <div class="dropdown mini-nav">
+                                                    <a href="tel:1300555570" class="nav-link"><span class="custom-icon-phone-ring"></span> +1300 555 570</a>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="dropdown mini-nav mini-nav-no-bg-hover">
+                                                    <a href="mailto:admin@connectified.com.au" class="nav-link"><span class="custom-icon-email1"></span> admin@connectified.com.au</a>
+                                                </div>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </nav>
+                    </div>
+                    <div class="bottom-header container mega-menus" id="mega-menus">
+                        <nav class="navbar navbar-toggleable-md no-border-radius no-margin mega-menu-multiple" id="navbar-inner-container">
+                            <form action="mega-menu-5.html" id="top-search" class="no-margin top-search">
+                                <div class="form-group no-margin">
+                                    <input class="form-control no-border" id="search_term" name="search_term" placeholder="Type & Press Enter" type="text">
+                                </div>
+                            </form>
+                            <button type="button" class="navbar-toggler navbar-toggler-left" data-toggle="collapse" data-target="#mega-menu">
+                                <span class="navbar-toggler-icon"></span>
+                            </button>
+                            <a class="navbar-brand mr-auto m-sm-auto" href="index.html"> <img src="img/connectifiedPH Logo.png" alt="roxine"> </a>
+                            <div class="collapse navbar-collapse flex-row-reverse" id="mega-menu">
+                                <ul class="nav navbar-nav">
+                                    <li class="dropdown" data-animation="fadeIn">
+                                        <a class="dropdown-toggle" data-toggle="dropdown" href="devices.html" data-title="Products"> Products </a>
+                                        <ul class="dropdown-menu no-border-radius">
+                                            <li><a href="devices.html"> Networking </a></li>
+                                            <li class="dropdown dropdown-right dropdown-parent">
+                                                <a class="sub-marker" href="wearables.html"> Custom Wearables <i class="icon-ios-more icn-right"></i></a>
+                                                <ul class="dropdown-menu dropdown-menu-indent-sm no-border-radius">
+                                                    <li><a href="wearables.html"> Custom Wearables </a></li>
+                                                    <li><a href="watchguardian.html"> Watch Guardian </a></li>
+                                                </ul>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li class="dropdown" data-animation="fadeIn">
+                                        <a class="dropdown-toggle" data-toggle="dropdown" href="bpo.html" data-title="BPO"> Business Process Outsourcing </a>
+                                        <ul class="dropdown-menu  no-border-radius">
+                                            <li class="dropdown dropdown-right dropdown-parent">
+                                                <a href="bpo.html">Business Process Outsourcing</a>
+                                            </li>
+                                            <li class="dropdown dropdown-right dropdown-parent">
+                                                <a href="bpo_projects.html">Our Projects</a>
+                                            </li>
+                                        </ul>
+                                    </li>
+
+                                    <li class="dropdown" data-animation="fadeIn">
+                                        <a class="dropdown-toggle" data-toggle="dropdown" href="iot_services.html" data-title="Professional Services"> Professional Services </a>
+                                        <ul class="dropdown-menu  no-border-radius">
+                                            <li class="dropdown dropdown-right dropdown-parent">
+                                                <a href="iot_services.html">IOT SERVICES</a>
+                                            </li>
+                                                <li class="dropdown dropdown-right dropdown-parent">
+                                                <a href="iot_projects.html">Our Projects</a>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    
+                                    <li class="dropdown" data-animation="fadeIn">
+                                        <a class="dropdown-toggle" data-toggle="dropdown" href="managedservices.html" data-title="Managed Services"> Managed Services </a>
+                                        <ul class="dropdown-menu  no-border-radius">
+
+                                            <li class="dropdown dropdown-right dropdown-parent">
+                                                <a href="managedservices.html">Managed Services</a>
+                                            </li>
+
+                                            <li class="dropdown dropdown-right dropdown-parent">
+                                                <a href="supportdesk.html">Support Desk Services</a>
+                                            </li>
+
+                                            <li class="dropdown dropdown-right dropdown-parent">
+                                                <a href="managedservices_projects.html">Our Projects</a>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    
+                                    <li>
+                                        <a href="about.html"> About </a>
+                                    </li>
+
+                                    <li>
+                                        <a href="#"> Blogs </a>
+                                    </li>
+
+                                    <li>
+                                        <a href="http://shop.connectified.com.au"> Shop </a>
+                                    </li>
+                                    <li>
+                                        <a href="contact.html"> Contact Us </a>
+                                    </li>
+                        </nav>
+                    </div>
+                </div>
+            </header>
+            <!--/header of the page -->
+            <main>
+                <!-- visual/banner of the page -->
+                
+                <div class="banner banner-home">
+                    <!-- revolution slider starts -->
+                    <div id="rev_slider_279_1_wrapper" class="rev_slider_wrapper fullscreen-container" data-alias="restaurant-header" style="margin:0px auto;background-color:#fff;padding:0px;margin-top:0px;margin-bottom:0px; position: relative; z-index: 1;">
+                        <div id="rev_slider_70_1" class="rev_slider fullscreenabanner" style="display:none;" data-version="5.1.4">
+                            <ul>
+                                <li class="slider-color-schema-dark" data-index="rs-2" data-transition="fade" data-slotamount="7" data-easein="default" data-easeout="default" data-masterspeed="1000" data-rotate="0" data-saveperformance="off" data-title="Slide" data-description="">
+                                    <!-- main image for revolution slider -->
+                                    <img src="img/connectified AU banner.png" alt="image description" data-bgposition="center center" data-kenburns="on" data-duration="30000" data-ease="Linear.easeNone" data-scalestart="100" data-scaleend="120" data-rotatestart="0" data-rotateend="0" data-offsetstart="0 0" data-offsetend="0 0" data-bgparallax="10" class="rev-slidebg" data-bgfit="cover" data-no-retina>
+                                    <div class="slider-sub-title text-white tp-caption tp-resizeme rs-parallaxlevel-0" data-x="['center','center','center','center']" data-hoffset="['0','0','0','0']" data-y="['top','top','middle','middle']" data-voffset="['145','100','10','20']" data-width="['1200','960','720','540']" data-textalign="center" data-fontsize="['30','28','24','20']" data-lineheight="['72','62','50','50']" data-letterspacing="5" data-height="none" data-whitespace="normal" data-transform_idle="o:1;" data-transform_in="z:0;rX:0deg;rY:0;rZ:0;sX:1.5;sY:1.5;skX:0;skY:0;opacity:0;s:1500;e:Power3.easeInOut;" data-transform_out="y:[100%];s:1000;e:Power2.easeInOut;s:1000;e:Power2.easeInOut;" data-mask_in="x:0px;y:0px;" data-mask_out="x:inherit;y:inherit;" data-start="1000" data-splitin="none" data-splitout="none" data-responsive_offset="on" data-paddingright="[25,25,25,25]" data-paddingleft="[25,25,25,25]">
+                                        More than Solutions. It's <span style="color: #14acd4;">EMPOWERING</span>.
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                        <!-- Offer Cards -->
+                        <!-- Swiper Container -->
+<div class="offer-carousel-container">
+    <div class="swiper offer-carousel">
+        <div class="swiper-wrapper">
+            <!-- Offer Card 1 -->
+            <div class="swiper-slide">
+                <div class="offer-card">
+                    <img src="img/products offer block.gif" alt="Products">
+                    <h5>PRODUCTS</h5>
+                    <p>Innovative networking hardware to empower your connectivity needs.</p>
+                    <a href="devices.html">Learn More</a>
+                </div>
+            </div>
+
+            <!-- Offer Card 2 -->
+            <div class="swiper-slide">
+                <div class="offer-card">
+                    <img src="img/bpo offer block.gif" alt="BPO Services">
+                    <h5>BPO SERVICES</h5>
+                    <p>Effortless outsourcing to drive your business efficiency and growth.</p>
+                    <a href="bpo.html">Learn More</a>
+                </div>
+            </div>
+
+            <!-- Offer Card 3 -->
+            <div class="swiper-slide">
+                <div class="offer-card">
+                    <img src="img/PS offer block.gif" alt="Professional Services">
+                    <h5>PROFESSIONAL SERVICES</h5>
+                    <p>Expert support tailored to empower your business operations.</p>
+                    <a href="iot_services.html">Learn More</a>
+                </div>
+            </div>
+
+            <!-- Offer Card 4 -->
+            <div class="swiper-slide">
+                <div class="offer-card">
+                    <img src="img/ms offer block.gif" alt="Managed Services">
+                    <h5>MANAGED SERVICES</h5>
+                    <p>Seamless management solutions to empower your business for success.</p>
+                    <a href="managedservices.html">Learn More</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Navigation Arrows -->
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>
+
+        <!-- Pagination Dots -->
+        <div class="swiper-pagination"></div>
+    </div>
+</div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--/visual/banner of the page -->
+    <!-- main content wrapper -->
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            const toggleButton = document.getElementById('theme-toggle');
+            const body = document.body;
+    
+            // Check local storage for saved theme
+            if (localStorage.getItem('theme') === 'dark') {
+                body.classList.add('dark-mode');
+            }
+    
+            toggleButton.addEventListener('click', () => {
+                body.classList.toggle('dark-mode');
+                
+                // Save preference in local storage
+                if (body.classList.contains('dark-mode')) {
+                    localStorage.setItem('theme', 'dark');
+                } else {
+                    localStorage.setItem('theme', 'light');
+                }
+            });
+        });
+    </script>
+    
+    
+    <div class="content-wrapper">
+        <section class="content-block">
+            <div class="container">
+                <div class="block-heading bottom-space">
+                    <br>
+                    <h3 class="block-top-heading">Struggling with operational bottlenecks?</h3>
+                    <h2 class="block-main-heading">CONNECTIFIED delivers <span style="color: #14acd4;">SOLUTIONS</span></h2>
+                    <span class="block-sub-heading">From networking hardware to managed services, we provide tools and talent to keep your business moving forward.</span>
+                </div>
+            </div>
+
+            <section class="content-block who-block black-overlay-6 parallax" data-stellar-background-ratio="0.55">
+                <div class="container">
+                    <div class="demo-wrapper">
+                        <div class="inner-wrapper">
+                            <h3 class="text-center element-heading text-white">Who We Are</h3>
+                            <div class="description text-center  text-white">
+                                <p>At Connectified, we deliver more than solutions—we empower businesses to grow smarter. With expertise in networking hardware, BPO, professional services, and managed solutions, we help you streamline operations, enhance connectivity, and achieve measurable success.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </section>
+
+        <section>
+                <h3 class="text-center element-heading">SEE HOW <span style="color: #14acd4;">CONNECTIFIED</span> CAN HELP YOUR BUSINESS</h3>
+                <div class="row multiple-row flipped-box">
+                    <div class="col-lg-3 col-md-6 col-sm-12">
+                    <!-- Block 1 -->
+                    <div class="col-wrap">
+                        <div class="ico-box bg-gray-light">
+                            <div class="flipper-box">
+                                <div class="front-box" style="position: relative;">
+                                    <img src="img/frontpage_card1.png" alt="Networking Hardware" style="width: 100%; height: auto;">
+                                    <div class="text-overlay">
+                                        <h4 class="content-title"><a href="#" style="color: #fff; text-decoration: none;">Struggling with unreliable connections?</a></h4>
+                                    </div>
+                                </div>
+                                <div class="back-box">
+                                    <div class="des">
+                                        <p>Our cutting-edge networking hardware ensures seamless connectivity to keep your business running smoothly.</p>
+                                    </div>
+                                    <div class="link-holder">
+                                        <a class="link-more" href="devices.html">LEARN MORE</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            
+                <div class="col-lg-3 col-md-6 col-sm-12">
+                    <!-- Block 2 -->
+                    <div class="col-wrap">
+                        <div class="ico-box bg-gray-light">
+                            <div class="flipper-box">
+                                <div class="front-box" style="position: relative;">
+                                    <img src="img/frontpage_card2.png" alt="BPO Services" style="width: 100%; height: auto;">
+                                    <div class="text-overlay">
+                                        <h4 class="content-title"><a href="#" style="color: #fff; text-decoration: none;">Need to offload operations?</a></h4>
+                                    </div>
+                                </div>
+                                <div class="back-box">
+                                    <div class="des">
+                                        <p>Our BPO services take care of administrative tasks and customer support so you can focus on growing your business.</p>
+                                    </div>
+                                    <div class="link-holder">
+                                        <a class="link-more" href="bpo.html">LEARN MORE</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            
+                <div class="col-lg-3 col-md-6 col-sm-12">
+                    <!-- Block 3 -->
+                    <div class="col-wrap">
+                        <div class="ico-box bg-gray-light">
+                            <div class="flipper-box">
+                                <div class="front-box" style="position: relative;">
+                                    <img src="img/frontpage_card3.png" alt="Professional Services" style="width: 100%; height: auto;">
+                                    <div class="text-overlay">
+                                        <h4 class="content-title"><a href="#" style="color: #fff; text-decoration: none;">Need expert help but short on resources?</a></h4>
+                                    </div>
+                                </div>
+                                <div class="back-box">
+                                    <div class="des">
+                                        <p>Our tailored professional services provide the talent and expertise to streamline your operations.</p>
+                                    </div>
+                                    <div class="link-holder">
+                                        <a class="link-more" href="iot_projects.html">LEARN MORE</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            
+                <div class="col-lg-3 col-md-6 col-sm-12">
+                    <!-- Block 4 -->
+                    <div class="col-wrap">
+                        <div class="ico-box bg-gray-light">
+                            <div class="flipper-box">
+                                <div class="front-box" style="position: relative;">
+                                    <img src="img/frontpage_card4.png" alt="Managed Services" style="width: 100%; height: auto;">
+                                    <div class="text-overlay">
+                                        <h4 class="content-title"><a href="#" style="color: #fff; text-decoration: none;">Finding it hard to manage efficiently?</a></h4>
+                                    </div>
+                                </div>
+                                <div class="back-box">
+                                    <div class="des">
+                                        <p>Our managed services ensure smooth workflows, 24/7 support, and scalable solutions for your success.</p>
+                                    </div>
+                                    <div class="link-holder">
+                                        <a class="link-more" href="managedservices.html">LEARN MORE</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+        </section>
+        
+        <!-- footer of the pagse -->
+        <footer class="footer">
+            <div class="content-block footer-main text-center">
+                <div class="container">
+                    <div class="waituk_newsletter-form">
+                        <form  action="https://formspree.io/f/mbldvkja" id="signup" method="post">
+                            <fieldset class="clearfix">
+                                <div class="form-group input-holder">
+                                    <input type="email" name="subscriber_email" id="subscriber_email" class="form-control" placeholder="Email Address">
+                                </div>
+                                <input type="submit" class="btn btn-trans-dark-gray" value="Subscribe">
+                            </fieldset>
+                            <p id="subscribe_message" class="text-left"></p>
+                        </form>
+                        <script>
+                            document.getElementById("signup").addEventListener("submit", function (event) {
+                                event.preventDefault();
+                                const form = event.target;
+                                fetch(form.action, {
+                                    method: form.method,
+                                    body: new FormData(form),
+                                    headers: {
+                                        Accept: "application/json",
+                                    },
+                                })
+                                    .then(response => {
+                                        if (response.ok) {
+                                            document.getElementById("subscribe_message").innerText = "Thank you for subscribing!";
+                                            form.reset();
+                                        } else {
+                                            document.getElementById("subscribe_message").innerText = "Oops! There was a problem.";
+                                        }
+                                    })
+                                    .catch(() => {
+                                        document.getElementById("subscribe_message").innerText = "Oops! There was a problem.";
+                                    });
+                            });
+                        </script>
+                    </div>
+                    <div class="content-block footer-info">
+                        <div class="row">
+                            <div class="col-md-4">
+                                <div class="holder">
+                                    <span class="icon custom-icon-phone"></span>
+                                    <p> Call Us At</p>
+                                    <p><a class="footer-link" href="tel:+1300 555 570">AU: +1300 555 570</a></p>
+                                    <br>
+                                    <p><a class="footer-link" href="tel:+6345 499 6913">PH: +6345 499 6913</a></p>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="holder">
+                                    <span class="icon custom-icon-email"></span>
+                                    <p> Email Us At</p>
+                                    <p><a href="mailto:admin@connectified.com.ph">admin@connectified.com.au</a></p>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="holder">
+                                    <span class="icon custom-icon-pin"></span>
+                                    <p> Visit Us</p>
+                                    <p>AU: 27A Sir Laurence Dr, Seaford, Victoria, 3198 Australia</p>
+                                     <br>
+                                     <p>PH: Pavilion 10, Berthaphil, Clark, Angeles, 2009 Pampanga</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- social networks -->
+                    <ul class="social-network">
+                        <li><a href="https://ph.linkedin.com/company/connectified-bringing-iot-to-life-inc" target="_blank"><span class="icon-linkedin"></span></a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom text-center">
+                <div class="container">
+                    <a href="privacy policy.html">Privacy Policy</a>
+                </div>
+                <div class="container">
+                    <a href="terms.html">Terms of Services</a>
+                </div>
+                <div class="container">
+                    <p>Copyright 2025 - Connectified </p>
+                </div>
+            </div>
+        </footer>
+        <!--/footer of the page -->
+    </div>
+    <!-- search form wrapper -->
+    <div class="search-form-wrapper bg-secondary white-text">
+        <a href="#" class="nav-search-link close"><span class="icon-android-close"></span></a>
+        <div class="holder">
+            <input type="search" class="form-control form-control-v1" placeholder="Enter Your Search">
+            <button type="submit"><span class="custom-icon-search"></span></button>
+        </div>
+    </div>
+    <a href="#" class="section-scroll" id="scroll-to-top"><i class="fa fa-angle-up"></i></a>
+    <!-- jquery library -->
+    <script src="vendors/jquery/jquery-2.1.4.min.js"></script>
+    <!-- external scripts -->
+    <script src="vendors/tether/dist/js/tether.min.js"></script>
+    <script src="vendors/bootstrap/js/bootstrap.min.js"></script>
+    <script src="vendors/stellar/jquery.stellar.min.js"></script>
+    <script src="vendors/isotope/javascripts/isotope.pkgd.min.js"></script>
+    <script src="vendors/isotope/javascripts/packery-mode.pkgd.js"></script>
+    <script src="vendors/owl-carousel/dist/owl.carousel.js"></script>
+    <script src="vendors/waypoint/waypoints.min.js"></script>
+    <script src="vendors/counter-up/jquery.counterup.min.js"></script>
+    <script src="vendors/fancyBox/source/jquery.fancybox.pack.js"></script>
+    <script src="vendors/fancyBox/source/helpers/jquery.fancybox-thumbs.js"></script>
+    <script src="vendors/image-stretcher-master/image-stretcher.js"></script>
+    <script src="vendors/wow/wow.min.js"></script>
+    <script src="vendors/rateyo/jquery.rateyo.js"></script>
+    <script src="vendors/bootstrap-datepicker/js/bootstrap-datepicker.js"></script>
+    <script src="vendors/bootstrap-slider-master/src/js/bootstrap-slider.js"></script>
+    <script src="vendors/bootstrap-select/dist/js/bootstrap-select.min.js"></script>
+    <script src="js/mega-menu.js"></script>
+    <!-- custom jquery script -->
+    <script src="js/jquery.main.js"></script>
+    <!-- REVOLUTION JS FILES -->
+    <script type="text/javascript" src="vendors/rev-slider/revolution/js/jquery.themepunch.tools.min.js"></script>
+    <script type="text/javascript" src="vendors/rev-slider/revolution/js/jquery.themepunch.revolution.min.js"></script>
+    <!-- SLIDER REVOLUTION 5.0 EXTENSIONS  (Load Extensions only on Local File Systems !  The following part can be removed on Server for On Demand Loading) -->
+    <script type="text/javascript" src="vendors/rev-slider/revolution/js/extensions/revolution.extension.actions.min.js"></script>
+    <script type="text/javascript" src="vendors/rev-slider/revolution/js/extensions/revolution.extension.carousel.min.js"></script>
+    <script type="text/javascript" src="vendors/rev-slider/revolution/js/extensions/revolution.extension.kenburn.min.js"></script>
+    <script type="text/javascript" src="vendors/rev-slider/revolution/js/extensions/revolution.extension.layeranimation.min.js"></script>
+    <script type="text/javascript" src="vendors/rev-slider/revolution/js/extensions/revolution.extension.migration.min.js"></script>
+    <script type="text/javascript" src="vendors/rev-slider/revolution/js/extensions/revolution.extension.navigation.min.js"></script>
+    <script type="text/javascript" src="vendors/rev-slider/revolution/js/extensions/revolution.extension.parallax.min.js"></script>
+    <script type="text/javascript" src="vendors/rev-slider/revolution/js/extensions/revolution.extension.slideanims.min.js"></script>
+    <script type="text/javascript" src="vendors/rev-slider/revolution/js/extensions/revolution.extension.video.min.js"></script>
+    <!-- SNOW ADD ON -->
+    <script type="text/javascript" src="vendors/rev-slider/revolution-addons/snow/revolution.addon.snow.min.js"></script>
+    <!-- revolutions slider script -->
+    <script src="js/revolution.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+<script>
+    document.addEventListener("DOMContentLoaded", function () {
+        var swiper = new Swiper(".offer-carousel", {
+            slidesPerView: 4,
+            spaceBetween: 15,
+            navigation: {
+                nextEl: ".swiper-button-next",
+                prevEl: ".swiper-button-prev",
+            },
+            pagination: {
+                el: ".swiper-pagination",
+                clickable: true,
+            },
+            breakpoints: {
+                1200: { slidesPerView: 4 },
+                992: { slidesPerView: 3 },
+                768: { slidesPerView: 2 },
+                480: { slidesPerView: 1 },
+            }
+        });
+    });
+</script>
+
+</body>
+
+</html>
