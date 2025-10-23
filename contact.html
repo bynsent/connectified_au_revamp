@@ -1,6 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
 
+<script
+src='//au.fw-cdn.com/20250286/121946.js'
+chat='true'>
+</script>
+
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -216,30 +221,6 @@
                         </div>
                     </section>
                 </div>
-                
-                <!-- Freshchat Web Messenger -->
-<script src="https://wchat.freshchat.com/js/widget.js" defer></script>
-<script>
-  (function waitForFC() {
-    if (!window.fcWidget || !window.fcWidget.init) {
-      return setTimeout(waitForFC, 50);
-    }
-    window.fcWidget.on("widget:loaded", function () {
-      console.log("[Freshchat] widget loaded");
-    });
-    window.fcWidget.on("widget:initialized", function () {
-      console.log("[Freshchat] widget initialized");
-    });
-    window.fcWidget.on("error", function (e) {
-      console.error("[Freshchat] error", e);
-    });
-
-    window.fcWidget.init({
-      token: "9f3aaf1f-f407-4c50-a6f3-a4bf3d55c1a8",
-      host: "https://wchat.freshchat.com" // see region note below
-    });
-  })();
-</script>
                 <!--/main content wrapper -->
             </main>
         </div>
