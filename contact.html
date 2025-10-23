@@ -216,6 +216,30 @@
                         </div>
                     </section>
                 </div>
+                
+                <!-- Freshchat Web Messenger -->
+<script src="https://wchat.freshchat.com/js/widget.js" defer></script>
+<script>
+  (function waitForFC() {
+    if (!window.fcWidget || !window.fcWidget.init) {
+      return setTimeout(waitForFC, 50);
+    }
+    window.fcWidget.on("widget:loaded", function () {
+      console.log("[Freshchat] widget loaded");
+    });
+    window.fcWidget.on("widget:initialized", function () {
+      console.log("[Freshchat] widget initialized");
+    });
+    window.fcWidget.on("error", function (e) {
+      console.error("[Freshchat] error", e);
+    });
+
+    window.fcWidget.init({
+      token: "9f3aaf1f-f407-4c50-a6f3-a4bf3d55c1a8",
+      host: "https://wchat.freshchat.com" // see region note below
+    });
+  })();
+</script>
                 <!--/main content wrapper -->
             </main>
         </div>
@@ -304,18 +328,6 @@
                     <p>Copyright 2025 - Connectified </p>
                 </div>
             </div>
-
-<script src="https://wchat.freshchat.com/js/widget.js"></script>
-<script>
-  window.fcWidget.init({
-    token: "9f3aaf1f-f407-4c50-a6f3-a4bf3d55c1a8",
-    host: "https://wchat.freshchat.com",
-    externalId: "", // optional — you can set a logged-in user's ID here if needed
-    restoreId: "", // optional
-    siteId: "b2726ff3-53c7-4fdc-8755-90f9e804bb8f" // optional, but helps with tracking if provided
-  });
-</script>
-
         </footer>
         <!--/footer of the page -->
     </div>
