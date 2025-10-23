@@ -87,6 +87,7 @@
                                                 <ul class="dropdown-menu dropdown-menu-indent-sm no-border-radius">
                                                     <li><a href="wearables.html"> Custom Wearables </a></li>
                                                     <li><a href="watchguardian.html"> Watch Guardian </a></li>
+                                                    <li><a href="watchguardianhealth.html"> Watch Guardian Health</a></li>
                                                 </ul>
                                             </li>
                                         </ul>
@@ -178,7 +179,8 @@
             <div class="swiper-slide">
                 <div class="offer-card">
                     <img src="img/products offer block.gif" alt="Products">
-                    <h5>PRODUCTS</h5>
+                    <h5>NETWORK</h5>
+                    <p><h5>DEVICES</h5>
                     <p>Innovative networking hardware to empower your connectivity needs.</p>
                     <a href="devices.html">Learn More</a>
                 </div>
@@ -188,7 +190,8 @@
             <div class="swiper-slide">
                 <div class="offer-card">
                     <img src="img/bpo offer block.gif" alt="BPO Services">
-                    <h5>BPO SERVICES</h5>
+                    <h5>BPO</h5>
+                    <p><h5>SERVICES</h5>
                     <p>Effortless outsourcing to drive your business efficiency and growth.</p>
                     <a href="bpo.html">Learn More</a>
                 </div>
@@ -198,7 +201,8 @@
             <div class="swiper-slide">
                 <div class="offer-card">
                     <img src="img/PS offer block.gif" alt="Professional Services">
-                    <h5>PROFESSIONAL SERVICES</h5>
+                    <h5>PROFESSIONAL</h5>
+                    <p><h5>SERVICES</h5>
                     <p>Expert support tailored to empower your business operations.</p>
                     <a href="iot_services.html">Learn More</a>
                 </div>
@@ -208,7 +212,8 @@
             <div class="swiper-slide">
                 <div class="offer-card">
                     <img src="img/ms offer block.gif" alt="Managed Services">
-                    <h5>MANAGED SERVICES</h5>
+                    <h5>MANAGED</h5>
+                    <p><h5>SERVICES</h5>
                     <p>Seamless management solutions to empower your business for success.</p>
                     <a href="managedservices.html">Learn More</a>
                 </div>
@@ -216,7 +221,7 @@
         </div>
 
         <!-- Navigation Arrows -->
-        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-prev"></div> 
         <div class="swiper-button-next"></div>
 
         <!-- Pagination Dots -->
@@ -518,6 +523,7 @@
     <!-- revolutions slider script -->
     <script src="js/revolution.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
 <script>
     document.addEventListener("DOMContentLoaded", function () {
         var swiper = new Swiper(".offer-carousel", {
@@ -535,11 +541,17 @@
                 1200: { slidesPerView: 4 },
                 992: { slidesPerView: 3 },
                 768: { slidesPerView: 2 },
-                480: { slidesPerView: 1 },
+                0: { slidesPerView: 1 }
             }
+        });
+
+        // Force update after load to respect screen width
+        window.addEventListener('load', function () {
+            swiper.update();
         });
     });
 </script>
+
 
 </body>
 

@@ -33,9 +33,36 @@
     <div id="wrapper">
         <div class="page-wrapper">
             <!-- header of the page -->
-            <header class="fixed-top main-header header-white transparent" id="waituk-main-header">
+            <header class="fixed-top main-header" id="waituk-main-header">
                 <div id="nav-section">
-                    <div class="bottom-header container-fluid mega-menus" id="mega-menus">
+                    <div class="mega-menus top-header">
+                        <nav class="p-static hidden-md-down">
+                            <div class="container">
+                                <div class="row">
+                                    <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 hidden-xs float-left text-center-sm no-float-sm no-padding">
+                                        <ul class="i-list i-list-i-block i-list-i-block-sm i-list-i-block-no-hover pad-0-sm margin-bottom-0 float-left text-center">
+                                            <li>
+                                                <button id="theme-toggle" style="padding: 10px; background-color: transparent; border: 1px solid #ccc; cursor: pointer;">
+                                                    Switch Mode
+                                                </button>
+                                            </li>
+                                            <li>
+                                                <div class="dropdown mini-nav">
+                                                    <a href="tel:1300555570" class="nav-link"><span class="custom-icon-phone-ring"></span> +1300 555 570</a>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="dropdown mini-nav mini-nav-no-bg-hover">
+                                                    <a href="mailto:admin@connectified.com.au" class="nav-link"><span class="custom-icon-email1"></span> admin@connectified.com.au</a>
+                                                </div>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </nav>
+                    </div>
+                    <div class="bottom-header container mega-menus" id="mega-menus">
                         <nav class="navbar navbar-toggleable-md no-border-radius no-margin mega-menu-multiple" id="navbar-inner-container">
                             <form action="mega-menu-5.html" id="top-search" class="no-margin top-search">
                                 <div class="form-group no-margin">
@@ -45,22 +72,47 @@
                             <button type="button" class="navbar-toggler navbar-toggler-left" data-toggle="collapse" data-target="#mega-menu">
                                 <span class="navbar-toggler-icon"></span>
                             </button>
-                            <a class="navbar-brand mr-auto m-sm-auto" href="index.html"> <img src="img/connectifiedPH Logo.png" alt="Connectified"> <img src="img/connectifiedPH Logo.png" alt="Connectified"> </a>
+                            <a class="navbar-brand mr-auto m-sm-auto" href="index.html"> <img src="img/connectifiedPH Logo.png" alt="roxine"> </a>
                             <div class="collapse navbar-collapse flex-row-reverse" id="mega-menu">
                                 <ul class="nav navbar-nav">
+                                    <li class="dropdown" data-animation="fadeIn">
+                                        <a class="dropdown-toggle" data-toggle="dropdown" href="devices.html" data-title="Products"> Products </a>
+                                        <ul class="dropdown-menu no-border-radius">
+                                            <li><a href="devices.html"> Networking </a></li>
+                                            <li class="dropdown dropdown-right dropdown-parent">
+                                                <a class="sub-marker" href="wearables.html"> Custom Wearables <i class="icon-ios-more icn-right"></i></a>
+                                                <ul class="dropdown-menu dropdown-menu-indent-sm no-border-radius">
+                                                    <li><a href="wearables.html"> Custom Wearables </a></li>
+                                                    <li><a href="watchguardian.html"> Watch Guardian </a></li>
+                                                    <li><a href="watchguardianhealth.html"> Watch Guardian Health</a></li>
+                                                </ul>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li class="dropdown" data-animation="fadeIn">
+                                        <a class="dropdown-toggle" data-toggle="dropdown" href="bpo.html" data-title="BPO"> Business Process Outsourcing </a>
+                                        <ul class="dropdown-menu  no-border-radius">
+                                            <li class="dropdown dropdown-right dropdown-parent">
+                                                <a href="bpo.html">Business Process Outsourcing</a>
+                                            </li>
+                                            <li class="dropdown dropdown-right dropdown-parent">
+                                                <a href="bpo_projects.html">Our Projects</a>
+                                            </li>
+                                        </ul>
+                                    </li>
+
                                     <li class="dropdown" data-animation="fadeIn">
                                         <a class="dropdown-toggle" data-toggle="dropdown" href="iot_services.html" data-title="Professional Services"> Professional Services </a>
                                         <ul class="dropdown-menu  no-border-radius">
                                             <li class="dropdown dropdown-right dropdown-parent">
-                                                <a href="iot_services.html">IOT Services</a>
+                                                <a href="iot_services.html">IOT SERVICES</a>
                                             </li>
-                                            
-                                            <li class="dropdown dropdown-right dropdown-parent">
+                                                <li class="dropdown dropdown-right dropdown-parent">
                                                 <a href="iot_projects.html">Our Projects</a>
                                             </li>
-                                            
                                         </ul>
                                     </li>
+                                    
                                     <li class="dropdown" data-animation="fadeIn">
                                         <a class="dropdown-toggle" data-toggle="dropdown" href="managedservices.html" data-title="Managed Services"> Managed Services </a>
                                         <ul class="dropdown-menu  no-border-radius">
@@ -78,31 +130,21 @@
                                             </li>
                                         </ul>
                                     </li>
-                                    <li class="dropdown" data-animation="fadeIn">
-                                        <a class="dropdown-toggle" data-toggle="dropdown" href="bpo.html" data-title="BPO"> Business Process Outsourcing </a>
-                                        <ul class="dropdown-menu  no-border-radius">
-                                            <li class="dropdown dropdown-right dropdown-parent">
-                                                <a href="bpo.html">Business Process Outsourcing</a>
-                                            </li>
-
-                                            <li class="dropdown dropdown-right dropdown-parent">
-                                                <a href="bpo_projects.html">Our Projects</a>
-                                            </li>
-                                        </ul>
-                                    </li>
+                                    
                                     <li>
                                         <a href="about.html"> About </a>
                                     </li>
 
                                     <li>
-                                        <a href="blog-landing.html"> Blogs </a>
+                                        <a href="#"> Blogs </a>
                                     </li>
 
                                     <li>
-                                        <a href="contact.html"> Contact </a>
+                                        <a href="http://shop.connectified.com.au"> Shop </a>
                                     </li>
-                                </ul>
-                            </div>
+                                    <li>
+                                        <a href="contact.html"> Contact Us </a>
+                                    </li>
                         </nav>
                     </div>
                 </div>

@@ -49,7 +49,7 @@ Version: 		1.0.0
     transform: translateX(-50%);
     width: 90%;
     max-width: 1200px;
-    z-index: 100; /* Ensure it's above the banner */
+    z-index: 999; /* <--- Ensure it's above the banner and slider text */
 }
 
 .swiper {
@@ -13427,5 +13427,127 @@ header.main-header {
     .carousel {
         gap: 30px;
     }
+
+.swiper {
+    width: 100%;
+    padding-bottom: 0 !important;
 }
 
+.swiper-slide {
+    display: flex;
+    justify-content: center;
+}
+
+.offer-card {
+    width: 90%;
+    max-width: 280px;
+    background: white;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    text-align: center;
+}
+
+/* Force responsive behaviour at small widths */
+@media (max-width: 767px) {
+    .swiper-wrapper {
+        flex-wrap: nowrap !important;
+        flex-direction: row !important;
+    }
+.offer-carousel-container {
+  position: absolute;
+  bottom: -60px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 90%;
+  max-width: 1200px;
+  z-index: 200 !important;
+}
+
+.swiper.offer-carousel {
+  z-index: 99;
+  position: relative;
+}
+
+.swiper-slide {
+  display: flex;
+  justify-content: center;
+  min-height: 360px;
+}
+
+.banner-home {
+  position: relative;
+  z-index: 1;
+  /* pointer-events: none; */ /* optional */
+}
+
+/* --- CSS to Align Swiper Offer Cards (Update in your css.txt) --- */
+
+.swiper-slide {
+  display: flex;           /* Keep it as a flex container */
+  justify-content: center; /* Keep existing justification */
+  align-items: stretch;    /* ADD THIS: Make slides stretch vertically */
+  height: auto;            /* ADD THIS: Let Swiper determine slide height based on tallest card */
+  min-height: 360px;       /* ADD THIS (Adjust value as needed): Ensure a minimum height for consistency */
+}
+
+.offer-card {
+  display: flex;            /* ADD THIS: Make the card a flex container */
+  flex-direction: column;   /* ADD THIS: Stack elements vertically */
+  width: 90%;               /* Keep existing */
+  max-width: 280px;         /* Keep existing */
+  background: white;        /* Keep existing */
+  padding: 20px;            /* Keep existing */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Keep existing */
+  border-radius: 8px;       /* Keep existing */
+  text-align: center;       /* Keep existing */
+  height: 100%;             /* ADD THIS: Make the card fill the stretched slide */
+  box-sizing: border-box;   /* ADD THIS: Ensure padding is included in height/width */
+}
+
+.offer-card img {
+  width: 100%;              /* Keep existing */
+  max-width: 100%;          /* Ensure image doesn't overflow */
+  height: auto;             /* Maintain aspect ratio */
+  border-radius: 8px;       /* Keep existing */
+  margin-bottom: 15px;      /* ADD THIS: Space below image */
+  flex-shrink: 0;           /* ADD THIS: Prevent image shrinking */
+}
+
+.offer-card h5 {
+  margin-top: 15px;         /* Keep existing */
+  font-size: 1.2rem;        /* Keep existing */
+  min-height: 2.4em;        /* ADD THIS (Optional): Reserves space for ~2 lines */
+  margin-bottom: 10px;      /* ADD THIS: Space below title */
+  flex-shrink: 0;           /* ADD THIS: Prevent header shrinking */
+}
+
+.offer-card p {
+  font-size: 0.9rem;        /* Keep existing */
+  color: #333;             /* Keep existing */
+  flex-grow: 1;             /* ADD THIS: Allows paragraph to expand */
+  margin-bottom: 15px;      /* ADD THIS: Space above button */
+}
+
+.offer-card a {
+  color: #14acd4;           /* Keep existing */
+  font-weight: bold;        /* Keep existing */
+  display: inline-block;    /* Keep existing */
+  margin-top: auto;         /* CHANGE THIS: Pushes link/button to the bottom */
+  flex-shrink: 0;           /* ADD THIS: Prevent link shrinking */
+  padding: 8px 15px;        /* ADD THIS: Give button-like padding */
+  text-decoration: none;    /* ADD THIS: Remove underline if not desired */
+  /* Add any other specific button styles you want */
+}
+
+/* Keep your Swiper navigation/pagination styles */
+.swiper-button-prev,
+.swiper-button-next {
+    color: #14acd4; /* Keep existing */
+}
+
+.swiper-pagination-bullet {
+    background: #14acd4; /* Keep existing */
+}
+
+/* --- End CSS Update --- */
